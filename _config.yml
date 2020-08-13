@@ -30,6 +30,7 @@ github_username:  BranLiang
 theme: minima
 plugins:
   - jekyll-feed
+google_analytics: UA-175300186-1
 
 # Exclude from processing.
 # The following items will not be processed, by default.
