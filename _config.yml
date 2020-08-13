@@ -23,7 +23,7 @@ email: bran@corran.cn
 description: >- # this means to ignore newlines until "baseurl:"
   Coding and have fun!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://bran.aboutme.link" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://branliang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  BranLiang
 
 # Build settings
