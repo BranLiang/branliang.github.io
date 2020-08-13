@@ -1,4 +1,0 @@
-- name: GitHub Pages
-  uses: crazy-max/ghaction-github-pages@v2.1.2
-  env:
-    JEKYLL_ENV: production
