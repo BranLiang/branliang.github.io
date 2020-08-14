@@ -17,11 +17,19 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    # Setup ruby environment
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.7'
+
+    # Build the website pages
+    - name: Build html files
+      run: bundle exec jekyll build
+
     # Deploy github pages with environment
-    - name: Run a multi-line script
+    - name: Deploy to github pages
       if: success()
       uses: crazy-max/ghaction-github-pages@v2.1.2
       with:
