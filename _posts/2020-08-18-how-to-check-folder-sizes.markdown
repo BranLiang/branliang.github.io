@@ -8,4 +8,5 @@ categories: ruby
 ```shell
 $ cd YOUR_DIRECTORY
 $ du -sh *
+$ du -sh * | sort -h
 ```
