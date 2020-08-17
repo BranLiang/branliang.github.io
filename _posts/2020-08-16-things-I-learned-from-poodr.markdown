@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "10 things learned from Practical Object Oriented Design in Ruby"
-date:   2020-08-16 15:20:08 +0800
+date:   2020-08-16
 categories: ruby
 ---
 
