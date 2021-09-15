@@ -185,4 +185,3 @@ That's it for the deployment starter kit! Hope you found it useful. A lot more c
 Resources:
 * [demo github source file](https://github.com/BranLiang/squirtle)
 * [Google tutorial](https://cloud.google.com/ruby/rails/run)
-* 
