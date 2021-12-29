@@ -2,7 +2,7 @@
 layout: post
 title:  "Serverless Rails on Google Cloud Run"
 date:   2021-09-13 19:41:12 +0800
-categories: google cloud platform
+categories: serverless
 ---
 ### TL'DR
 
