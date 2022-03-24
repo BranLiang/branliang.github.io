@@ -2,8 +2,10 @@
 layout: post
 title:  "Install luci-app-ssr-plus in GL-iNET E750"
 date:   2021-12-29 19:41:12 +0800
-categories: ruby
+categories: vpn
 ---
+
+![mudi](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032404.jpeg?raw=true)
 
 ### TL'DR
 
@@ -11,8 +13,8 @@ This post shows you how to install luci-app-ssr-plus in you GL-iNET mobile route
 
 ### Requirements
 
-Device: usb150/ar150/ar300m/mifi/ar750/ar750s/x750/x300b/xe300/e750/x1200
-Openwrt: openwrt-19.07.7
+- Device: usb150/ar150/ar300m/mifi/ar750/ar750s/x750/x300b/xe300/e750/x1200
+- Openwrt: openwrt-19.07.7
 
 ### Before you start
 
@@ -22,11 +24,11 @@ It's very hard to compile the package luci-app-ssr-plus alone using [sdk](https:
 
 ### Steps
 
-1. (Optional) Restore your device to the factory setting.
+- (Optional) Restore your device to the factory setting.
 
 So you could have a clean start, otherwise, you may encounter unexpected error. Highly recommended but not necessary.
 
-2. Download all the packages and upload to the router using ssh.
+- Download all the packages and upload to the router using ssh.
 
 ```shell
 # Upload local package
@@ -39,19 +41,19 @@ ssh root@192.168.8.1
 unzip luci-app-ssr-plus.zip
 ```
 
-3. Install luci and login to the luci dashboard
+- Install luci and login to the luci dashboard
 
 Luci could be installed in the settings -> advanced.
 
 ![2022032401.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032401.png?raw=true)
 
-4. Install dependent luci packages
+- Install dependent luci packages
 
 Manual install package `luci-compat`
 
 ![2022032402.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032402.png?raw=true)
 
-5. Install downloaded packages in the ssh session
+- Install downloaded packages in the ssh session
 
 ```shell
 opkg install \
@@ -68,7 +70,7 @@ tcping_0.3-1_mips_24kc.ipk \
 luci-app-ssr-plus_180-10_all.ipk
 ```
 
-6. Refresh the luci window and now you should see the sweet luci ssr plus!
+- Refresh the luci window and now you should see the sweet luci ssr plus!
 
 ![2022032403.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032403.png?raw=true)
 
