@@ -80,6 +80,10 @@ Enjoy!
 
 If you have any problem with the above steps, leave an issue in the github!
 
+### Credits
+
+- [Sedap](https://github.com/sedap/gl-inet-ar300m-trojan-luci-app-ssr-plus)
+
 
 
 
