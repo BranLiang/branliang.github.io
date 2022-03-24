@@ -47,7 +47,7 @@ Luci could be installed in the settings -> advanced.
 
 4. Install dependent luci packages
 
-- luci-compat
+Manual install package `luci-compat`
 
 ![2022032402.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032402.png?raw=true)
 
