@@ -24,7 +24,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   🍺 Be the change you wish to see.
 url: "https://branliang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  branliang
-google_analytics: G-TNBPVKF38F
 show_excerpts: true
 excerpt_separator: <--end_excerpt-->
 
