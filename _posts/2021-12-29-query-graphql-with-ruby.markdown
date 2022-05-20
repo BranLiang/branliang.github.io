@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "Simple GraphQL query with Ruby"
+title:  "Simple graphql query with ruby"
 date:   2021-12-29 19:41:12 +0800
 categories: ruby
 ---
-
-### TL'DR
-
 Query GraphQL in ruby is easy. All you need is a library for HTTP post request.
 
 ### Gem graphql-client
@@ -14,6 +11,8 @@ Query GraphQL in ruby is easy. All you need is a library for HTTP post request.
 It's just so natural that we will look for a gem for GraphQL query. And you actually do that, gem [graphql-client](https://github.com/github/graphql-client) would be your go to choice. It looks sophicticated and reliable enough, as it is produced by the github team, right?
 
 Let's check what this gem is doing for us. This gem loads the graphql schema, and helps validate the query string. Also, it will parse the response, so you can treat the result like a ruby object.
+
+<--end_excerpt-->
 
 ```ruby
 # graphql-ruby configuration demo

@@ -1,13 +1,10 @@
 ---
 layout: post
-title:  "Install luci-app-ssr-plus in GL-iNET E750"
+title:  "Install luci-app-ssr-plus in gl-inet e750"
 date:   2021-12-29 19:41:12 +0800
 categories: vpn
 ---
-
-![mudi](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032404.jpeg?raw=true)
-
-### TL'DR
+![mudi](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032404.jpeg?raw=true){: width="100%" }
 
 This post shows you how to install luci-app-ssr-plus in you GL-iNET mobile router.
 
@@ -21,6 +18,8 @@ This post shows you how to install luci-app-ssr-plus in you GL-iNET mobile route
 It's very hard to compile the package luci-app-ssr-plus alone using [sdk](https://github.com/gl-inet/sdk), and I am providing a precompiled package here.
 
 [Package link](https://github.com/branliang/branliang.github.io/blob/master/assets/file/luci-app-ssr-plus.zip)
+
+<--end_excerpt-->
 
 ### Steps
 
