@@ -4,6 +4,8 @@ title:  "Simple graphql query with ruby"
 date:   2021-12-29 19:41:12 +0800
 categories: ruby
 ---
+![graphql](https://github.com/branliang/branliang.github.io/blob/master/assets/images/graphql-ruby.png?raw=true){: width="100%" }
+
 Query GraphQL in ruby is easy. All you need is a library for HTTP post request.
 
 ### Gem graphql-client

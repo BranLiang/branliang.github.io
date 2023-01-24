@@ -4,6 +4,8 @@ title:  "Serverless rails on google cloud run"
 date:   2021-09-13 19:41:12 +0800
 categories: serverless
 ---
+![cloud run](https://github.com/branliang/branliang.github.io/blob/master/assets/images/cloud-run.png?raw=true){: width="100%" }
+
 > This tutorial shows you a way to deploy rails on google cloud run and at the same time make the server warm all the time.
 
 There are many ways to deploy a server online, the most traditional way is to rent virtual machine and deploy the server there, it sounds simple but actual not. First, prepare a virtual machine to make it ready is a pain for me everytime. And you also need to config stuff like loadbalance, server group, certificates, firewalls, and so on. It's just not easy to deploy an **https** server on virtual machine. Are you asking me why should we use https? Because it's 2021!
