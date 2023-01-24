@@ -4,7 +4,7 @@ title:  "Install luci-app-ssr-plus in gl-inet e750"
 date:   2021-12-29 19:41:12 +0800
 categories: vpn
 ---
-![mudi](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032404.jpeg?raw=true){: width="100%" }
+![mudi](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032404.jpg?raw=true){: width="100%" }
 
 This post shows you how to install luci-app-ssr-plus in you GL-iNET mobile router.
 
