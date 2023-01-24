@@ -9,7 +9,7 @@ As you all know that [shadowsocks](https://shadowsocks.org/) could help to proxy
 
 This post uses linux as the test environment, but should be similar to macos.
 
-<--end_excerpt-->
+<!--end_excerpt-->
 
 ### What is tun interface?
 

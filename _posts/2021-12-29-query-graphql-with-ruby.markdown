@@ -12,7 +12,7 @@ It's just so natural that we will look for a gem for GraphQL query. And you actu
 
 Let's check what this gem is doing for us. This gem loads the graphql schema, and helps validate the query string. Also, it will parse the response, so you can treat the result like a ruby object.
 
-<--end_excerpt-->
+<!--end_excerpt-->
 
 ```ruby
 # graphql-ruby configuration demo

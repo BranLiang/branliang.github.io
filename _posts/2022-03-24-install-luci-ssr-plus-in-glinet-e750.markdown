@@ -19,7 +19,7 @@ It's very hard to compile the package luci-app-ssr-plus alone using [sdk](https:
 
 [Package link](https://github.com/branliang/branliang.github.io/blob/master/assets/file/luci-app-ssr-plus.zip)
 
-<--end_excerpt-->
+<!--end_excerpt-->
 
 ### Steps
 
