@@ -4,7 +4,7 @@ title:  "Serverless rails on google cloud run"
 date:   2021-09-13 19:41:12 +0800
 categories: serverless
 ---
-![cloud run](https://github.com/branliang/branliang.github.io/blob/master/assets/images/cloud-run.png?raw=true){: width="100%" }
+![cloud run](/assets/images/cloud-run.png){: width="100%" }
 
 > This tutorial shows you a way to deploy rails on google cloud run and at the same time make the server warm all the time.
 
@@ -36,16 +36,16 @@ rails new squirtle --webpack=stimulus --database=mysql
 
 Add a test home page to your rails project. You will need this page to verify the production runnning status.
 
-![2021091301.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091301.png?raw=true)
+![2021091301.png](/assets/images/2021091301.png)
 
 ### Step 2 - Prepare database
 Create a MySQL database instance on GCP, search `sql` in the serach bar and you should find the SQL admin panel. You may be asked to create a project if you didn't have one yet. Here is my demo database instance.
 
-![2021091302.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091302.png?raw=true)
+![2021091302.png](/assets/images/2021091302.png)
 
 Database instance can have many databases, you should now create one for your project. I am going to name it `squirtle_production`. Also don't forget to create a new user for your database, you will need it for the database configuration 😁.
 
-![2021091303.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091303.png?raw=true)
+![2021091303.png](/assets/images/2021091303.png)
 
 ### Step 3 - Config database
 Now that you have a production ready database, let's now config it to our project. I recommend to have your password encrypted in the rails secrets.
@@ -63,7 +63,7 @@ production:
   socket: "<%= ENV.fetch("DB_SOCKET_DIR") { '/cloudsql' } %>/ao-ke-meng:us-west1:snorlax"
 ```
 
-![2021091304.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091304.png?raw=true)
+![2021091304.png](/assets/images/2021091304.png)
 
 ### Step 4 - Prepare Dockerfile
 Add this a file `Dockerfile` to the root folder with following configuration. Check docker documentations for more information.
@@ -142,10 +142,10 @@ availableSecrets:
 
 If you check the file carefully, you would notice one configuration is `_SECRET_NAME: squirtle_master_key`, I am storing the rails master key in the GCP as the secret. You should also create one secret there and let the image builder access it when building the image. Search `secret` in the serach bar to find the secrets manager. Also you need to attach proper permission for accounts, so that the builder could access the secrets properly.
 
-![2021091305.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091305.png?raw=true)
+![2021091305.png](/assets/images/2021091305.png)
 
 ### Step 6 - Build image manually using gcloud
-For the first time, I would choose to using deploy it manually, incase anything is wrong. Deploy cli tool `gcloud` is used. More information can be found [here](https://cloud.google.com/sdk/gcloud/), it would 
+For the first time, I would choose to using deploy it manually, incase anything is wrong. Deploy cli tool `gcloud` is used. More information can be found [here](https://cloud.google.com/sdk/gcloud/), it would
 ```shell
 bundle lock --add-platform x86_64-linux
 gcloud builds submit --config cloudbuild.yaml
@@ -153,18 +153,18 @@ gcloud builds submit --config cloudbuild.yaml
 
 If successful, you will see a SUCCESS message at the terminal end. Go to the cloud build page to check the build status.
 
-![2021091306.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091306.png?raw=true)
+![2021091306.png](/assets/images/2021091306.png)
 
 ### Step 7 - Deploy manually on dashboard
 Go the dashboard of Cloud registry and click deploy to cloud run. You need to connect to the database when first time deploy to cloud run.
 
-![2021091307.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091307.png?raw=true)
+![2021091307.png](/assets/images/2021091307.png)
 
-![2021091308.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091308.png?raw=true)
+![2021091308.png](/assets/images/2021091308.png)
 
 After deploying, check the url provided by the cloud run. You should see the home page you created before. And what's better, it's running under https!
 
-![2021091309.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091309.png?raw=true)
+![2021091309.png](/assets/images/2021091309.png)
 
 ### Step 8 - Add healthcheck for the server
 One big disadvantage of cloud run is that if it is inactive for some time, the server will shutdown. When new request comes it will boot again. And that request is much slower, usually costs more than 10s, therefore we need to request the service frequently to keep it **warm**. Health check is a very good candidate to handle this job.
@@ -175,7 +175,7 @@ gem 'rails-healthcheck' # Add this helper gem to your Gemfile
 
 Search monitoring in the search bar and create a uptime check for the server. Choose the smallest period available (1min).
 
-![2021091310.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2021091310.png?raw=true)
+![2021091310.png](/assets/images/2021091310.png)
 
 ### Step 9 - Setup automatic docker image builder pipeline
 There are many CI/CD tools available in the market, here I am using the continuous cloud build server offered by Google. Whenever a new version tag is pushed to the github, a new build will be triggered on the google platform. If you want to deploy the new image, you should go to the cloud run dashboard and replace the image manully.

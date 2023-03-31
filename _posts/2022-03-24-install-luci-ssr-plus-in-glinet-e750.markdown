@@ -4,7 +4,7 @@ title:  "Install luci-app-ssr-plus in gl-inet e750"
 date:   2021-12-29 19:41:12 +0800
 categories: vpn
 ---
-![mudi](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032404.jpg?raw=true){: width="100%" }
+![mudi](/assets/images/2022032404.jpg){: width="100%" }
 
 This post shows you how to install luci-app-ssr-plus in you GL-iNET mobile router.
 
@@ -17,7 +17,7 @@ This post shows you how to install luci-app-ssr-plus in you GL-iNET mobile route
 
 It's very hard to compile the package luci-app-ssr-plus alone using [sdk](https://github.com/gl-inet/sdk), and I am providing a precompiled package here.
 
-[Package link](https://github.com/branliang/branliang.github.io/blob/master/assets/file/luci-app-ssr-plus.zip)
+[Package link](/assets/file/luci-app-ssr-plus.zip)
 
 <!--end_excerpt-->
 
@@ -44,13 +44,13 @@ unzip luci-app-ssr-plus.zip
 
 Luci could be installed in the settings -> advanced.
 
-![2022032401.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032401.png?raw=true)
+![2022032401.png](/assets/images/2022032401.png)
 
 - Install dependent luci packages
 
 Manual install package `luci-compat`
 
-![2022032402.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032402.png?raw=true)
+![2022032402.png](/assets/images/2022032402.png)
 
 - Install downloaded packages in the ssh session
 
@@ -71,7 +71,7 @@ luci-app-ssr-plus_180-10_all.ipk
 
 - Refresh the luci window and now you should see the sweet luci ssr plus!
 
-![2022032403.png](https://github.com/branliang/branliang.github.io/blob/master/assets/images/2022032403.png?raw=true)
+![2022032403.png](/assets/images/2022032403.png)
 
 Enjoy!
 

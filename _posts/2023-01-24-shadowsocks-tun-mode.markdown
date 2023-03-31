@@ -4,7 +4,7 @@ title:  "Using shadowsocks with utun interface"
 date:   2023-01-24 12:54:12 +0800
 categories: vpn
 ---
-![shadowsocks](https://github.com/branliang/branliang.github.io/blob/master/assets/images/shadowsocks.png?raw=true){: width="100%" }
+![shadowsocks](/assets/images/shadowsocks.png){: width="100%" }
 
 As you all know that [shadowsocks](https://shadowsocks.org/) could help to proxy the network traffic to your remote server. However, with the development of the [shadowsocks-rust](https://github.com/shadowsocks/shadowsocks-rust), now it has a new mode which utilizes the unix [tun interface feature](https://en.wikipedia.org/wiki/TUN/TAP). This post will show you briefly how that looks like.
 

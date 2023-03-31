@@ -4,7 +4,7 @@ title:  "Simple graphql query with ruby"
 date:   2021-12-29 19:41:12 +0800
 categories: ruby
 ---
-![graphql](https://github.com/branliang/branliang.github.io/blob/master/assets/images/graphql-ruby.png?raw=true){: width="100%" }
+![graphql](/assets/images/graphql-ruby.png){: width="100%" }
 
 Query GraphQL in ruby is easy. All you need is a library for HTTP post request.
 
@@ -52,7 +52,7 @@ end
 
 I am using the gem [HTTP](https://github.com/httprb/http), you can choose whatever http library you like. This can handle the graphql request and receive the result json. It's dumb, but works.
 
-Another problem is writing the graphql is hard, without the gem `graphql-client` to do the valdation for you, you have no idea if you are writing the correct schema. However, this problem could be solved very easily, all you need is a smart code editor. I am using vscode here for example. 
+Another problem is writing the graphql is hard, without the gem `graphql-client` to do the valdation for you, you have no idea if you are writing the correct schema. However, this problem could be solved very easily, all you need is a smart code editor. I am using vscode here for example.
 
 ```graphql
 # app/controller/graphql/shop.gql
@@ -73,7 +73,7 @@ module Graphql
     def self.load_query(filename)
       File.read(FOLDER_PATH + filename + ".gql")
     end
-  
+
     Shop = load_query("shop")
   end
 end
