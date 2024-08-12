@@ -11,8 +11,5 @@ source "https://rubygems.org"
 ruby "3.3.4"
 
 gem "jekyll", "~> 4.3.3"
-gem "minima"
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-end
+gem "minima", :git => "https://github.com/jekyll/minima.git"
 gem "webrick", "~> 1.7"
