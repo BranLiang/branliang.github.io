@@ -28,7 +28,7 @@ github_username:  branliang
 show_excerpts: false
 
 # Build settings
-theme: moving
+theme: minima
 
 moving:
   date_format: "%b %d" # date format of posts in home page

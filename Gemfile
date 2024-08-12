@@ -11,7 +11,7 @@ source "https://rubygems.org"
 ruby "3.3.4"
 
 gem "jekyll", "~> 4.3.3"
-gem "moving"
+gem "minima"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
