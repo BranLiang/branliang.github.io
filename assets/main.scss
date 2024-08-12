@@ -1,8 +1,6 @@
 ---
+sitemap: false
 ---
 
-@import "minima";
-html, body {
-    font-size: 18px;
-    font-family: 'Nunito Sans', Roboto, 'Noto Sans', 'Open Sans', 'Arial', sans-serif;
-}
+@import "moving";
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');

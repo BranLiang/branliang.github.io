@@ -55,6 +55,10 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
+    moving (0.1.0)
+      jekyll (~> 4.0)
+      jekyll-feed (~> 0.9)
+      jekyll-seo-tag (~> 2.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (5.0.4)
@@ -84,13 +88,14 @@ DEPENDENCIES
   jekyll (~> 4.3.3)
   jekyll-feed (~> 0.12)
   minima (~> 2.5)
+  moving
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
   webrick (~> 1.7)
 
 RUBY VERSION
-   ruby 3.3.3p89
+   ruby 3.3.4p94
 
 BUNDLED WITH
    2.3.7

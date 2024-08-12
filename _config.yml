@@ -18,19 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Brans's blog
+title: Bran's blog
 author: "2024 © Bran Liang"
+email: bran.liang@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
   🍺 Be the change you wish to see.
 url: "https://blog.brancraft.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  branliang
-show_excerpts: true
-excerpt_separator: <!--end_excerpt-->
+show_excerpts: false
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+theme: moving
+
+moving:
+  date_format: "%b %d" # date format of posts in home page
+  back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

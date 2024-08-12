@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to build a scalable application using Rails? (1)"
+title:  "How to build a scalable application using Rails?"
 date:   2023-05-27 10:41:00 +0800
 categories: rails
 ---
