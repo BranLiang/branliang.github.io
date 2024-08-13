@@ -8,7 +8,8 @@ include_scripts: [
 ]
 include_modules: [
     "/assets/js/nature_of_code/warmup.js",
-    "/assets/js/nature_of_code/0-1-random-walker.js"
+    "/assets/js/nature_of_code/0-1-random-walker.js",
+    "/assets/js/nature_of_code/0-2-random-distribution.js"
 ]
 ---
 
@@ -43,5 +44,37 @@ Next is a simple illustration of a random walker, who will start from the center
   style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
 >
 </div>
+
+### Random number distribution
+
+It is said the js `Math.random` is uniformly distributed, is that true? Let's find out by building a distribution graph.
+
+<div 
+  id='noc-random-distribution'
+  style='height:480px; width:100%; border:1px solid gray; margin-bottom:10px;'
+>
+</div>
+
+Wow, I didn't expect the bar chart to be so hard to generate, but still I did it, and compared with before, when I always use some kind of third party chart library to draw all kind of chart, now this is a whole new level of char drawing, I am using d3.js to manipulate the svg element directly now.
+
+The most tricky part of this diagram is the way to link to the data. I am not fully understand what's happening there yet, but generally speaking, the dynamic chart uses to steps `enter` and `merge` to make the bar chart dynamic.
+
+Check this [article](https://bost.ocks.org/mike/join/) if you are confused as myself.
+
+```js
+// Update the bars
+const bars = svg.selectAll("rect")
+    .data(random_numbers);
+
+bars.enter().append("rect")
+    .attr("x", (d, i) => x(i * 10) + (tick_width - 20) / 2)
+    .attr("y", (d) => container.offsetHeight - 24)
+    .attr("width", 20)
+    .attr("height", 0)
+    .style("fill", "steelblue")
+    .merge(bars)
+    .attr("y", (d) => y(d))
+    .attr("height", (d) => container.offsetHeight - 24 - y(d));
+```
 
 
