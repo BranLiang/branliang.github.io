@@ -19,11 +19,16 @@ function random_walk() {
         }
 
         step() {
-            const ystep = Math.floor(Math.random() * 3) - 1;
-            const xstep = Math.floor(Math.random() * 3) - 1;
-
-            this.x += xstep;
-            this.y += ystep;
+            let r = Math.random();
+            if (r < 0.4) {
+                this.x++;
+            } else if (r < 0.6) {
+                this.x--;
+            } else if (r < 0.8) {
+                this.y++;
+            } else {
+                this.y--;
+            }
 
             this.x = Math.min(this.width, Math.max(0, this.x));
             this.y = Math.min(this.height, Math.max(0, this.y));

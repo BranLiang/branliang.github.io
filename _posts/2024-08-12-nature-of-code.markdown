@@ -9,7 +9,8 @@ include_scripts: [
 include_modules: [
     "/assets/js/nature_of_code/warmup.js",
     "/assets/js/nature_of_code/0-1-random-walker.js",
-    "/assets/js/nature_of_code/0-2-random-distribution.js"
+    "/assets/js/nature_of_code/0-2-random-distribution.js",
+    "/assets/js/nature_of_code/0-3-gaussian-distribution.js"
 ]
 ---
 
@@ -77,4 +78,12 @@ bars.enter().append("rect")
     .attr("height", (d) => container.offsetHeight - 24 - y(d));
 ```
 
+### Gaussian distribution
 
+Uniform distribution is uncommon in the nature, so let's taste a bit about the Gaussian distribution, also known as the normal distribution.
+
+<div 
+  id='noc-gaussian-distribution'
+  style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
+>
+</div>
