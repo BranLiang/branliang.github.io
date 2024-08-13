@@ -47,7 +47,7 @@ function random_walk() {
         walker.step();
         walker.draw(svg);
 
-        if (elapsed > 1000000) {
+        if (elapsed > 50000) {
             t.stop();
         }
     });

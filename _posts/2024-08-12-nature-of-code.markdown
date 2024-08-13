@@ -106,3 +106,5 @@ Sometimes, even gaussian distribution is not natural enough, in that case, we co
     >
     </div>
 </div>
+
+It is clear that perlin noise looks much natural than uniform random noise.

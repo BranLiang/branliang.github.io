@@ -13,7 +13,7 @@ function gaussian_distribution() {
             .attr("r", 16)
             .style("fill", "rgba(0, 0, 0, 0.05")
 
-        if (elapsed > 15000) {
+        if (elapsed > 5000) {
             t.stop();
         }
     });

@@ -32,6 +32,10 @@ function perlin_noise() {
             .attr("stroke-width", 2);
 
         xoff += 0.01
+
+        if (elapsed > 10000) {
+            t.stop();
+        }
     }, 1000 / 60);
 }
 
@@ -67,6 +71,10 @@ function random_noise() {
             .attr("fill", "none")
             .attr("stroke", "red")
             .attr("stroke-width", 1);
+
+        if (elapsed > 10000) {
+            t.stop();
+        }
     }, 1000 / 60);
 }
 
