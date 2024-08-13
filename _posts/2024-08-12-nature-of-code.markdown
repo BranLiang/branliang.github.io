@@ -7,7 +7,8 @@ include_scripts: [
     "https://cdn.jsdelivr.net/npm/d3@7"
 ]
 include_modules: [
-    "/assets/js/nature_of_code/warmup.js"
+    "/assets/js/nature_of_code/warmup.js",
+    "/assets/js/nature_of_code/0-1-random-walker.js"
 ]
 ---
 
@@ -32,3 +33,15 @@ const svg = d3.select("#noc-warmup").append("svg")
     .attr("width", container.offsetWidth)
     .attr("height", container.offsetHeight)
 ```
+
+### Random walker
+
+Next is a simple illustration of a random walker, who will start from the center of the canvas and randomly walking on it.
+
+<div 
+  id='noc-random-walker'
+  style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
+>
+</div>
+
+
