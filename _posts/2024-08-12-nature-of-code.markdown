@@ -4,13 +4,15 @@ title:  "Nature of Code with d3.js"
 date:   2024-08-12
 categories: js
 include_scripts: [
-    "https://cdn.jsdelivr.net/npm/d3@7"
+    "https://cdn.jsdelivr.net/npm/d3@7",
+    "/assets/js/perlin.js"
 ]
 include_modules: [
     "/assets/js/nature_of_code/warmup.js",
     "/assets/js/nature_of_code/0-1-random-walker.js",
     "/assets/js/nature_of_code/0-2-random-distribution.js",
-    "/assets/js/nature_of_code/0-3-gaussian-distribution.js"
+    "/assets/js/nature_of_code/0-3-gaussian-distribution.js",
+    "/assets/js/nature_of_code/0-4-perlin-noise.js"
 ]
 ---
 
@@ -86,4 +88,21 @@ Uniform distribution is uncommon in the nature, so let's taste a bit about the G
   id='noc-gaussian-distribution'
   style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
 >
+</div>
+
+Sometimes, even gaussian distribution is not natural enough, in that case, we could try using the `Perlin noise`, following I will compare the perlin noise with the uniform random numbers side by side.
+
+<div
+    style='width:100%; margin-bottom:10px; display:flex; justify-content:space-between;'
+>
+    <div 
+        id='noc-compare-perlin-noise'
+        style='height:240px; width:48%; border:1px solid gray;'
+    >
+    </div>
+    <div 
+        id='noc-compare-random-noise'
+        style='height:240px; width:48%; border:1px solid gray;'
+    >
+    </div>
 </div>
