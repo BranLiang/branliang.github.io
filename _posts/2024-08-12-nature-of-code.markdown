@@ -12,7 +12,8 @@ include_modules: [
     "/assets/js/nature_of_code/0-1-random-walker.js",
     "/assets/js/nature_of_code/0-2-random-distribution.js",
     "/assets/js/nature_of_code/0-3-gaussian-distribution.js",
-    "/assets/js/nature_of_code/0-4-perlin-noise.js"
+    "/assets/js/nature_of_code/0-4-perlin-noise.js",
+    "/assets/js/nature_of_code/1-1-bouncing-ball.js"
 ]
 ---
 
@@ -108,3 +109,13 @@ Sometimes, even gaussian distribution is not natural enough, in that case, we co
 </div>
 
 It is clear that perlin noise looks much natural than uniform random noise.
+
+### Bouncing ball
+
+Next chapter, let's talk about vectors!
+
+<div 
+  id='noc-compare-bouncing-ball'
+  style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
+>
+</div>
