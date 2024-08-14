@@ -5,7 +5,8 @@ date:   2024-08-12
 categories: js
 include_scripts: [
     "https://cdn.jsdelivr.net/npm/d3@7",
-    "/assets/js/perlin.js"
+    "/assets/js/perlin.js",
+    "/assets/js/victor.min.js"
 ]
 include_modules: [
     "/assets/js/nature_of_code/warmup.js",
@@ -13,7 +14,8 @@ include_modules: [
     "/assets/js/nature_of_code/0-2-random-distribution.js",
     "/assets/js/nature_of_code/0-3-gaussian-distribution.js",
     "/assets/js/nature_of_code/0-4-perlin-noise.js",
-    "/assets/js/nature_of_code/1-1-bouncing-ball.js"
+    "/assets/js/nature_of_code/1-1-bouncing-ball.js",
+    "/assets/js/nature_of_code/1-2-vector-subtraction.js"
 ]
 ---
 
@@ -151,4 +153,14 @@ databoundedCircle.join(
 
 New update approach does feel a bit more smooth, not sure if that's just an illusion.
 
+As an upgrade, the book asks to use vector instead of using the naive `x` and `y` values, however it seems that d3.js doesn't offer native vector calculation support, any other libraries I can turn to this time? It turns out that there is actually one library [vistor.js](http://victorjs.org) that does the vector calculation job. I will try to use the victor library for the following tasks, I really don't want to create my own vector math library XD.
 
+### Vector subtraction
+
+For this demonstration, I need to figure out how to dynamically update the graph based on my mouse position.
+
+<div
+  id='noc-vector-subtraction'
+  style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
+>
+</div>
