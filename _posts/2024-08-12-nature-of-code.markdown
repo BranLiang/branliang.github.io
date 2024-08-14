@@ -119,3 +119,36 @@ Next chapter, let's talk about vectors!
   style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
 >
 </div>
+
+Initially, I was using the approach which removes the object first and then redraw the whole object again in a new position, but this feels laggy and compared with the animation from `p5.js`, my version looks worse.
+
+```js
+svg.selectAll("*").remove();
+
+svg.append("circle")
+    .attr("cx", x)
+    .attr("cy", y)
+    .attr("r", 48)
+    .attr("fill", "steelblue");
+```
+
+According to the documentation, the correct way should use the d3 events like `enter`, `update`. Let's update the script now!
+
+```js
+let circle = svg.selectAll("circle");
+let databoundedCircle = circle.data([{ x, y }]);
+databoundedCircle.join(
+    enter => enter.append("circle")
+        .attr("cx", (d) => d.x)
+        .attr("cy", (d) => d.y)
+        .attr("r", 48)
+        .attr("fill", "steelblue"),
+    update => update
+        .attr("cx", (d) => d.x)
+        .attr("cy", (d) => d.y),
+)
+```
+
+New update approach does feel a bit more smooth, not sure if that's just an illusion.
+
+

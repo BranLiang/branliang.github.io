@@ -24,13 +24,20 @@ function bouncing_ball() {
             yspeed *= -1;
         }
 
-        svg.append("circle")
-            .attr("cx", x)
-            .attr("cy", y)
-            .attr("r", 48)
-            .attr("fill", "steelblue");
+        let circle = svg.selectAll("circle");
+        let databoundedCircle = circle.data([{ x, y }]);
+        databoundedCircle.join(
+            enter => enter.append("circle")
+                .attr("cx", (d) => d.x)
+                .attr("cy", (d) => d.y)
+                .attr("r", 48)
+                .attr("fill", "steelblue"),
+            update => update
+                .attr("cx", (d) => d.x)
+                .attr("cy", (d) => d.y),
+        )
 
-        if (elapsed > 10000) {
+        if (elapsed > 50000) {
             t.stop();
         }
     }, 1000 / 60);
