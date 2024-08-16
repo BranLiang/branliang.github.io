@@ -15,7 +15,8 @@ include_modules: [
     "/assets/js/nature_of_code/0-3-gaussian-distribution.js",
     "/assets/js/nature_of_code/0-4-perlin-noise.js",
     "/assets/js/nature_of_code/1-1-bouncing-ball.js",
-    "/assets/js/nature_of_code/1-2-vector-subtraction.js"
+    "/assets/js/nature_of_code/1-2-vector-subtraction.js",
+    "/assets/js/nature_of_code/1-3-vector-magnitude.js"
 ]
 ---
 
@@ -164,3 +165,14 @@ For this demonstration, I need to figure out how to dynamically update the graph
   style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
 >
 </div>
+
+Unlike the code with p5.js, I didn't use the vector subtraction function, as I don't find a place to use that function.
+
+### Vector magnitude
+
+<div
+  id='noc-vector-magnitude'
+  style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
+>
+</div>
+
