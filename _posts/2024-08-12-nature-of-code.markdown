@@ -188,3 +188,7 @@ Until now, I have already created a bunch of small svg based animations, if you 
 </div>
 
 This diagram tricked me for a while, as I find it really tricky to apply gravity force using the native `force` API, and also I need to set the velocity delay to zero, otherwise the velocity increase drops very quickly.
+
+As the codebase using d3.js is much harder than using p5.js alone I find it difficult to follow using d3.js alone. Therefore I am going to switch to using p5.js Now.
+
+(Done)
