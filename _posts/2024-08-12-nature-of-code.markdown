@@ -16,7 +16,8 @@ include_modules: [
     "/assets/js/nature_of_code/0-4-perlin-noise.js",
     "/assets/js/nature_of_code/1-1-bouncing-ball.js",
     "/assets/js/nature_of_code/1-2-vector-subtraction.js",
-    "/assets/js/nature_of_code/1-3-vector-magnitude.js"
+    "/assets/js/nature_of_code/1-3-vector-magnitude.js",
+    "/assets/js/nature_of_code/1-4-forces.js"
 ]
 ---
 
@@ -176,3 +177,14 @@ Unlike the code with p5.js, I didn't use the vector subtraction function, as I d
 >
 </div>
 
+Until now, I have already created a bunch of small svg based animations, if you check the js source code, you will find that compared with the p5.js source code, the code with d3.js is much longer and hard to read, that's because I am using a much lower level of API than the one provided from p5.js, but that should could be optimized if I created a few helpers and abstractions, so let's create a mini engine (helpers) now!
+
+### Forces
+
+<div
+  id='noc-forces'
+  style='height:240px; width:100%; border:1px solid gray; margin-bottom:10px;'
+>
+</div>
+
+This diagram tricked me for a while, as I find it really tricky to apply gravity force using the native `force` API, and also I need to set the velocity delay to zero, otherwise the velocity increase drops very quickly.
